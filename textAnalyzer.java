@@ -8,7 +8,6 @@
  */
 
 import org.jsoup.nodes.Document;
-
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -25,9 +24,7 @@ public class textAnalyzer {
         String arr[]=str.split(" ");
         //counting frequencies of word and storing into unsortedWordFreqMp
         for(int i=0;i<arr.length;i++){
-            if(arr[i]==" "){
-                continue;
-            }
+            
             if(unsortedWordFreqMp.containsKey(arr[i])){
                 unsortedWordFreqMp.put(arr[i], unsortedWordFreqMp.get(arr[i])+1);
             }
@@ -78,7 +75,6 @@ public class textAnalyzer {
                 file = file.replaceAll("[^A-Za-z0-9]", " ");
                 file = file.trim().replaceAll(" +"," ").toLowerCase();
                 countFreq(file);
-                
                 
         }
         catch(Exception ex){
