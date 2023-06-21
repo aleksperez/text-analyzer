@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.textanalyzer.guiController">
+   <children>
+      <Label id="titleLabel" fx:id="title" layoutX="108.0" layoutY="14.0" text="Text Analyzer">
+         <font>
+            <Font name="Book Antiqua" size="36.0" />
+         </font>
+      </Label>
+      <Label id="label1" fx:id="label1" layoutX="64.0" layoutY="79.0" prefHeight="36.0" prefWidth="317.0" text="Press the button to see the top 20 most used words">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Label id="label2" fx:id="label2" layoutX="109.0" layoutY="106.0" prefHeight="36.0" prefWidth="236.0" text=" within Edgar Allen Poe's The Raven!">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="analyzeButton" layoutX="144.0" layoutY="154.0" mnemonicParsing="false" onAction="#showResults" text="Analyze The Raven">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ListView fx:id="words" layoutX="80.0" layoutY="219.0" prefHeight="476.0" prefWidth="141.0" />
+      <ListView fx:id="occurrences" layoutX="221.0" layoutY="219.0" prefHeight="476.0" prefWidth="141.0" />
+   </children>
+</Pane>
