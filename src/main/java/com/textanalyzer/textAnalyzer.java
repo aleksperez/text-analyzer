@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 
 public class textAnalyzer extends Application {
     private static Scene scene;
-
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("textAnalyzerGui"));
