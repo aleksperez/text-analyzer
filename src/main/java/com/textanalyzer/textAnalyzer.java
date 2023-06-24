@@ -76,8 +76,7 @@ public class textAnalyzer extends Application {
             final Document doc = Jsoup.connect(url).get();
 
             String file = doc.select("div.chapter").text();
-            file = file.replaceAll("[^A-Za-z0-9]", " ");
-            file = file.trim().replaceAll(" +"," ").toLowerCase();
+            file = file.replaceAll("[^A-Za-z0-9\s]", "").toLowerCase();
             LinkedHashMap<String,Integer> results = top20results((allResults(file)));
             return results;
         }
