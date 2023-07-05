@@ -2,13 +2,11 @@ package com.textanalyzer;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.junit.After;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
